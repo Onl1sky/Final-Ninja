@@ -2,168 +2,45 @@
 <html lang="ro">
 <head>
   <meta charset="UTF-8">
-  <title>Pagina Joc</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #c1dfc4, #deecdd);
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
-
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 30px;
-      background-color: #2c3e50;
-      color: white;
-      font-size: 16px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    }
-
-    main {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      position: relative;
-    }
-
-    .profile-box {
-      position: absolute;
-      left: 40px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 250px;
-      height: 220px;
-      background-color: white;
-      border-radius: 15px;
-      padding: 20px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    .profile-box h3 {
-      text-align: center;
-      color: #2c3e50;
-      font-size: 20px;
-      margin-bottom: 10px;
-    }
-
-    .profile-box .info {
-      font-size: 14px;
-      margin: 8px 0;
-      background-color: #ecf0f1;
-      padding: 6px 10px;
-      border-radius: 8px;
-    }
-
-    .center-buttons {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .center-buttons button {
-      padding: 15px 40px;
-      font-size: 18px;
-      border: none;
-      border-radius: 12px;
-      background-color: #3498db;
-      color: white;
-      cursor: pointer;
-      transition: background 0.3s ease;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .center-buttons button:hover {
-      background-color: #2980b9;
-    }
-
-    .record-box {
-      position: absolute;
-      right: 40px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 250px;
-      height: 220px;
-      background-color: white;
-      border-radius: 15px;
-      padding: 20px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    }
-
-    .record-box h3 {
-      margin-bottom: 10px;
-      color: #2c3e50;
-      font-size: 20px;
-      text-align: center;
-    }
-
-    .record-box ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    .record-box li {
-      margin: 8px 0;
-      padding: 5px 10px;
-      background-color: #ecf0f1;
-      border-radius: 8px;
-      text-align: center;
-    }
-
-    footer {
-      text-align: center;
-      padding: 15px;
-      background-color: #2c3e50;
-      color: white;
-      font-size: 14px;
-      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-    }
-  </style>
+  <title>Meniu Modern</title>
+  <link rel="stylesheet" href="menu.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header>
-    <div>🇷🇴 România</div>
-    <div id="oraSite">Site pornit la: --:--:--</div>
-  </header>
+<header>
+  <div class="left">🇷🇴 România</div>
+  <div class="right">
+    <span id="oraSite">Site pornit la: --:--:--</span>
+    <nav>
+      <a href="login.html">Login</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </div>
+</header>
+
 
   <main>
-    <!-- PROFIL -->
-    <div class="profile-box">
+    <section class="card profile">
       <h3>👤 Profil</h3>
-      <div class="info"><strong>Nume:</strong> Andrei Popescu</div>
-      <div class="info"><strong>Email:</strong> andrei@example.com</div>
-      <div class="info"><strong>Rol:</strong> Utilizator</div>
-    </div>
+      <p><strong>Nume:</strong> Andrei Popescu</p>
+      <p><strong>Email:</strong> andrei@example.com</p>
+      <p><strong>Rol:</strong> Utilizator</p>
+    </section>
 
-    <!-- BUTOANE CENTRALE -->
-    <div class="center-buttons">
-      <a href="index.html"><button>▶ Play</button></a>
-      <a href="setting.html"><button>⚙️ Setting</button></a>
-    </div>
+    <section class="center">
+      <a href="index.html" class="btn">▶ Play</a>
+      <a href="setting.html" class="btn">⚙️ Setări</a>
+    </section>
 
-    <!-- RECORDURI -->
-    <div class="record-box">
+    <section class="card record">
       <h3>🏆 Recorduri</h3>
       <ul>
         <li>Scor 1: 99999</li>
         <li>Scor 2: 9999</li>
         <li>Scor 3: 999</li>
       </ul>
-    </div>
+    </section>
   </main>
 
   <footer>

@@ -6,8 +6,6 @@ class CollisionBlock {
   }
 
   draw() {
-    // Blocurile sunt complet invizibile - nu se desenează nimic
-    // Chiar și în modul debug
   }
 
   update() {
